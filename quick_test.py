@@ -19,16 +19,16 @@ def quick_test():
     print("🧪 快速测试开始...")
     print("=" * 60)
     
-    # 临时修改配置，只抓取 cs.AI 类别的少量论文
+    # 临时修改配置，只抓取 nlin.CD（分形相关）类别的少量论文
     fetcher = PaperFetcher()
     
     # 只保留一个类别用于快速测试
     original_categories = fetcher.config['sources']['arxiv']['categories']
-    fetcher.config['sources']['arxiv']['categories'] = ['cs.AI']
+    fetcher.config['sources']['arxiv']['categories'] = ['nlin.CD']
     fetcher.config['sources']['arxiv']['max_results'] = 10  # 只抓取10篇
     fetcher.config['sources']['arxiv']['days_back'] = 7  # 最近7天
     
-    print("📥 正在抓取 cs.AI 类别的 10 篇最新论文...")
+    print("📥 正在抓取 nlin.CD 类别的 10 篇最新论文...")
     print()
     
     try:

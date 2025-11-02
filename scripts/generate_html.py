@@ -41,14 +41,14 @@ class HTMLGenerator:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DailyPaper - AI/ML/CV/NLP 最新论文</title>
+    <title>DailyPaper - 分形理论与传热传质最新论文</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>📚 DailyPaper</h1>
-            <p class="subtitle">每日自动更新 AI/ML/CV/NLP 领域最新论文</p>
+            <p class="subtitle">每日自动更新分形理论与传热传质领域最新论文</p>
             <p class="update-time">最后更新: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC</p>
         </div>
     </header>
@@ -67,11 +67,9 @@ class HTMLGenerator:
                 <label class="filter-label">🏷️ 研究领域：</label>
                 <div class="filters category-filters">
                     <button class="filter-btn category-btn active" data-category="all">全部</button>
-                    <button class="filter-btn category-btn" data-category="Computer Vision">Computer Vision</button>
-                    <button class="filter-btn category-btn" data-category="Natural Language Processing">NLP</button>
-                    <button class="filter-btn category-btn" data-category="Machine Learning">Machine Learning</button>
-                    <button class="filter-btn category-btn" data-category="Robotics">Robotics</button>
-                    <button class="filter-btn category-btn" data-category="Multimodal">Multimodal</button>
+                    <button class="filter-btn category-btn" data-category="Fractal Theory">分形理论</button>
+                    <button class="filter-btn category-btn" data-category="Heat and Mass Transfer">传热传质</button>
+                    <button class="filter-btn category-btn" data-category="Porous Media and Multiscale Transport">多尺度传输</button>
                 </div>
             </div>
         </div>
@@ -108,6 +106,12 @@ class HTMLGenerator:
     def get_category_name(self, category: str) -> str:
         """将 ArXiv 类别代码转换为友好的名称"""
         category_map = {
+            'nlin.CD': 'Chaotic Dynamics',
+            'physics.flu-dyn': 'Fluid Dynamics',
+            'physics.class-ph': 'Classical Physics',
+            'cond-mat.soft': 'Soft Condensed Matter',
+            'math-ph': 'Mathematical Physics',
+            # 保留历史显示，兼容已有数据
             'cs.AI': 'Artificial Intelligence',
             'cs.CV': 'Computer Vision',
             'cs.CL': 'Computational Linguistics (NLP)',

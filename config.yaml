@@ -3,98 +3,78 @@ sources:
   arxiv:
     enabled: true
     categories:
-      - cs.AI    # Artificial Intelligence
-      - cs.CV    # Computer Vision
-      - cs.CL    # Computation and Language (NLP)
-      - cs.LG    # Machine Learning
-      - cs.IR    # Information Retrieval
-      - cs.RO    # Robotics
+      - nlin.CD    # Chaotic Dynamics（含分形理论）
+      - physics.flu-dyn    # Fluid Dynamics（传热传质相关）
+      - physics.class-ph   # Classical Physics（热学）
+      - cond-mat.soft      # Soft Condensed Matter（复杂介质中的传热传质）
+      - math-ph            # Mathematical Physics（分形理论基础）
     max_results: 100
     days_back: 7  # 抓取最近几天的论文
 
 # 领域分类关键词
 categories:
-  Computer Vision:
-    keywords: 
-      - computer vision
-      - image processing
-      - object detection
-      - image segmentation
-      - face recognition
-      - video analysis
-      - 3d reconstruction
-      - pose estimation
-      - visual recognition
-      - image generation
-      
-  Natural Language Processing:
+  Fractal Theory:
     keywords:
-      - natural language processing
-      - language model
-      - transformer
-      - bert
-      - gpt
-      - machine translation
-      - text generation
-      - question answering
-      - sentiment analysis
-      - named entity recognition
-      
-  Machine Learning:
+      - fractal
+      - multifractal
+      - fractal geometry
+      - fractal dimension
+      - self-similar
+      - strange attractor
+      - chaos theory
+      - cantor set
+      - fractal analysis
+      - fractional calculus
+
+  Heat and Mass Transfer:
     keywords:
-      - machine learning
-      - deep learning
-      - neural network
-      - reinforcement learning
-      - transfer learning
-      - few-shot learning
-      - meta-learning
-      - optimization
-      - generative model
-      - contrastive learning
-      
-  Robotics:
+      - heat transfer
+      - mass transfer
+      - thermal conductivity
+      - convection
+      - conduction
+      - diffusion
+      - boundary layer
+      - nusselt number
+      - heat exchanger
+      - transport phenomena
+
+  Porous Media and Multiscale Transport:
     keywords:
-      - robotics
-      - autonomous
-      - robot learning
-      - manipulation
-      - navigation
-      - control
-      
-  Multimodal:
-    keywords:
-      - multimodal
-      - vision-language
-      - clip
-      - image-text
-      - video-text
+      - porous media
+      - multiscale
+      - pore-scale
+      - anomalous diffusion
+      - permeability
+      - darcy flow
+      - effective medium
+      - lattice boltzmann
+      - nonlocal transport
+      - complex media
 
 # 顶级会议和期刊列表
 venues:
   conferences:
-    - NeurIPS
-    - ICML
-    - ICLR
-    - CVPR
-    - ICCV
-    - ECCV
-    - ACL
-    - EMNLP
-    - NAACL
-    - AAAI
-    - IJCAI
-    - KDD
-    - ICRA
-    - IROS
-    
+    - International Heat Transfer Conference (IHTC)
+    - ASME Summer Heat Transfer Conference (SHTC)
+    - InterPore
+    - SIAM Conference on Applications of Dynamical Systems
+    - International Conference on Fractals and Related Fields
+    - CHAOS International Conference
+    - International Conference on Heat Transfer and Fluid Flow
+    - International Conference on Thermal Engineering
+    - Gordon Research Conference on Fractals and Complexity
+    - International Conference on Porous Media & Its Applications
+
   journals:
-    - Nature
-    - Science
-    - PAMI
-    - JMLR
-    - TPAMI
-    - IJCV
+    - International Journal of Heat and Mass Transfer
+    - International Communications in Heat and Mass Transfer
+    - Applied Thermal Engineering
+    - Journal of Heat Transfer
+    - Chaos, Solitons & Fractals
+    - Fractals
+    - Transport in Porous Media
+    - Physical Review E
 
 # GitHub Pages 配置
 output:

@@ -20,7 +20,7 @@ git commit -m "Initial commit: DailyPaper project"
 1. 访问 https://github.com/new
 2. 填写仓库信息：
    - **Repository name**: `DailyPaper` (或其他你喜欢的名字)
-   - **Description**: `📚 每日自动更新 AI/ML/CV/NLP 领域最新论文`
+   - **Description**: `📚 每日自动更新分形理论与传热传质领域最新论文`
    - **Public** (必须是 Public 才能使用免费的 GitHub Pages)
    - **不要** 勾选 "Add a README file"（我们已经有了）
 3. 点击 **Create repository**

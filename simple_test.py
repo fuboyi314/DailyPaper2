@@ -23,11 +23,11 @@ def simple_test():
     fetcher = PaperFetcher()
     
     # 修改配置：只抓取一个类别，不限制时间
-    fetcher.config['sources']['arxiv']['categories'] = ['cs.AI']
+    fetcher.config['sources']['arxiv']['categories'] = ['nlin.CD']
     fetcher.config['sources']['arxiv']['max_results'] = 10
     fetcher.config['sources']['arxiv']['days_back'] = 365  # 1年内的论文都可以
     
-    print("📥 正在抓取 cs.AI 类别的 10 篇最新论文（不限制时间）...")
+    print("📥 正在抓取 nlin.CD 类别的 10 篇最新论文（不限制时间）...")
     print()
     
     try:
