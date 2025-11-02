@@ -4,21 +4,21 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-每天自动汇总 AI/ML/CV/NLP 领域的最新论文，节省你的检索时间！
+每天自动汇总“分形理论 + 传热传质”领域的最新论文，节省你的检索时间！
 
 ## 🎯 功能特点
 
 - ✨ **自动更新**：每天自动抓取最新论文
-- 📚 **多源聚合**：支持 ArXiv、顶级会议、期刊等多个数据源
-- 🔍 **智能分类**：按领域自动分类（CV、NLP、ML 等）
+- 📚 **多源聚合**：支持 ArXiv 等多个数据源
+- 🔍 **智能分类**：按领域自动分类（分形理论、传热传质、多尺度传输等）
 - 🎨 **美观展示**：响应式网页设计，支持搜索和筛选
 - 🔗 **快速访问**：论文原文直接链接
 
 ## 📖 支持的数据源
 
-- **ArXiv**：cs.AI, cs.CV, cs.CL, cs.LG 等分类
-- **会议**：NeurIPS, ICML, CVPR, ICCV, ECCV, ACL, EMNLP 等
-- **期刊**：Nature, Science, PAMI, JMLR 等
+- **ArXiv**：nlin.CD, physics.flu-dyn, physics.class-ph 等分类
+- **会议**：International Heat Transfer Conference, InterPore, SIAM DS 等
+- **期刊**：International Journal of Heat and Mass Transfer, Chaos, Solitons & Fractals 等
 
 ## 🚀 快速开始
 
@@ -89,17 +89,17 @@ DailyPaper/
 sources:
   arxiv:
     enabled: true
-    categories: ['cs.AI', 'cs.CV', 'cs.CL', 'cs.LG']
-    max_results: 50
+    categories: ['nlin.CD', 'physics.flu-dyn', 'physics.class-ph']
+    max_results: 100
   
 # 更新频率
 schedule: "0 0 * * *"  # 每天 UTC 0:00
 
 # 领域关键词
 keywords:
-  CV: ['computer vision', 'image', 'video', 'detection', 'segmentation']
-  NLP: ['natural language', 'language model', 'transformer', 'nlp']
-  ML: ['machine learning', 'deep learning', 'neural network']
+  Fractal Theory: ['fractal', 'multifractal', 'chaos', 'fractal geometry']
+  Heat and Mass Transfer: ['heat transfer', 'mass transfer', 'convection', 'diffusion']
+  Porous Media and Multiscale Transport: ['porous media', 'multiscale', 'anomalous diffusion']
 ```
 
 ## 📊 数据来源
